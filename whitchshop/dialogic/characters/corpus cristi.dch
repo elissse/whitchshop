@@ -8,16 +8,16 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "normal",
+"default_portrait": "New portrait",
 "description": "",
-"display_name": "corpus cristi",
+"display_name": "Corpus Cristi",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"normal": {
+"New portrait": {
 "export_overrides": {
-"image": "\"res://assets/characters/witch2.1.png\""
+"image": "\"res://assets/characters/corpuscristiiii.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

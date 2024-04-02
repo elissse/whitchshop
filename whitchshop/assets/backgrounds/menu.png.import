@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5lkkveig5nn5"
-path="res://.godot/imported/hansel-and-gretel11.png-8fed08c85fe9e696a0ef2e5645ab734d.ctex"
+uid="uid://iw7fe87iyirm"
+path="res://.godot/imported/menu.png-477738cf5d39a1f4a5206698a0fefd83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/hansel-and-gretel11.png"
-dest_files=["res://.godot/imported/hansel-and-gretel11.png-8fed08c85fe9e696a0ef2e5645ab734d.ctex"]
+source_file="res://assets/backgrounds/menu.png"
+dest_files=["res://.godot/imported/menu.png-477738cf5d39a1f4a5206698a0fefd83.ctex"]
 
 [params]
 

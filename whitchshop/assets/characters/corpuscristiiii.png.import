@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tqucqsask3g6"
-path="res://.godot/imported/witch2.1.png-b68502cc224fc05a0a59eb60e094144b.ctex"
+uid="uid://dlfsolgibw4u4"
+path="res://.godot/imported/corpuscristiiii.png-767d4a7a90e77a29d3788447d5e39433.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/witch2.1.png"
-dest_files=["res://.godot/imported/witch2.1.png-b68502cc224fc05a0a59eb60e094144b.ctex"]
+source_file="res://assets/characters/corpuscristiiii.png"
+dest_files=["res://.godot/imported/corpuscristiiii.png-767d4a7a90e77a29d3788447d5e39433.ctex"]
 
 [params]
 

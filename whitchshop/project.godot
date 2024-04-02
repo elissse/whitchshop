@@ -22,13 +22,15 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"corpus cristi": "res://dialogic/characters/corpus cristi.dch",
-"hansel and gretel": "res://dialogic/characters/hansel and gretel.dch"
+"Corpus Cristi": "res://dialogic/characters/Corpus Cristi.dch"
 }
 directories/dtl_directory={
-"level1": "res://dialogic/timelines/level1.dtl",
-"level2": "res://dialogic/timelines/level2.dtl"
+"level_1": "res://dialogic/timelines/level_1.dtl"
 }
+
+[display]
+
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
