@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdawjy8d1b20h"]
+
+[ext_resource type="Texture2D" uid="uid://dgyolngjivip1" path="res://assets/backgrounds/making_potions.png" id="1_7o80j"]
+[ext_resource type="Script" path="res://src/scripts/first_potion.gd" id="2_beml4"]
+
+[node name="MakingPotions" type="Sprite2D"]
+position = Vector2(575, 325)
+scale = Vector2(0.598958, 0.6)
+texture = ExtResource("1_7o80j")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -19.7
+anchor_right = -11.025
+anchor_bottom = 3.325
+offset_top = 7.0
+offset_right = 3.05176e-05
+script = ExtResource("2_beml4")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 285.0
+offset_top = -433.0
+offset_right = 785.0
+offset_bottom = 272.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_direction = 1
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control"]
+layout_mode = 0
+offset_left = 26.0
+offset_right = 196.0
+offset_bottom = 158.0
+
+[node name="Control2" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control2"]
+layout_mode = 0
+offset_left = 309.365
+offset_top = 475.667
+offset_right = 479.365
+offset_bottom = 633.667
+
+[node name="Control3" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control3"]
+layout_mode = 0
+offset_left = 23.8695
+offset_top = 468.333
+offset_right = 193.87
+offset_bottom = 626.333
+
+[node name="Control4" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control4"]
+layout_mode = 0
+offset_left = 297.678
+offset_top = 229.333
+offset_right = 467.678
+offset_bottom = 387.333
+
+[node name="Control5" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control5"]
+layout_mode = 0
+offset_left = 23.8695
+offset_top = 228.666
+offset_right = 193.87
+offset_bottom = 386.667
+
+[node name="Control6" type="Control" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control6"]
+layout_mode = 0
+offset_left = 302.687
+offset_top = -17.0002
+offset_right = 472.687
+offset_bottom = 141.0

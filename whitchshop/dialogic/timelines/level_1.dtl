@@ -1,0 +1,55 @@
+[background arg="res://assets/backgrounds/shop.png" fade="0.0"]
+join Hasel 1
+Hasel: Ээээ ведьмина лачужка, верно? Надеюсь хоть в этот раз мы не отправимся прямиком в печь…
+leave Hasel
+join "Corpus Cristi" 1
+"Corpus Cristi": ...
+leave "Corpus Cristi"
+join Gretel 1
+Gretel: Гензель! Кхм, прошу прощения за моего неблаговоспитанного братца. Уважаемая покровительница лесов наших, мы пришли к Вам с просьбой.
+leave Gretel
+join "Corpus Cristi" 1
+"Corpus Cristi": Добрый вечер. Проходите. Что привело вас в мою скромную обитель?
+leave "Corpus Cristi"
+join Gretel 1
+Gretel: Наша названная матушка… Довольно неуместно с нами обходится и мы…
+leave Gretel
+join Hasel 1
+Hasel: Да брось, Гретель! Эта сумасшедшая женщина буквально околдовала отца и отправила нас на верную смерть в лес!
+leave Hasel
+join Gretel 1
+Gretel: Отец не козлик, чтобы его околдовывать…
+leave Gretel
+join Hasel 1
+Hasel: Так вот! Мы бы хотели обзавестись зельем, дабы сделать матушку адекватной.
+leave Hasel
+join Gretel 1
+Gretel: Чтобы в душе ее проснулся свет и любовь к окружающему миру и людям.
+leave Gretel
+join Hasel 1
+Hasel: И к нам.
+leave Hasel
+join "Corpus Cristi" 1
+"Corpus Cristi": Хм, я вас услышала. Значит вам необходим легкий приворот с элементами закольцовки, желательно постараться добавить непрогляд…
+"Corpus Cristi": Я вас поняла, молодые люди. Зелье будет готово в течении часа. Есть дополнительные пожелания, допустим, в виде потакания всем вашим просьбам или стирания памяти?
+leave "Corpus Cristi"
+join Hasel 1
+Hasel: Ха, ну было бы неплохо ещё…
+leave Hasel
+join Gretel 1
+Gretel: ГЕНЗЕЛЬ!!!!!
+leave Gretel
+join Hasel 1
+Hasel: Благодарим Вас! Мы будем полностью удовлетворены базовой версией.
+leave Hasel
+[end_timeline]
+
+join Hasel 1
+Hasel: ...
+leave Hasel
+join Gretel 1
+Gretel: ...
+leave Gretel
+join "Corpus Cristi" 1
+"Corpus Cristi": ...
+leave "Corpus Cristi"

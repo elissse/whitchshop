@@ -1,0 +1,311 @@
+[gd_scene load_steps=39 format=3 uid="uid://bdawjy8d1b20h"]
+
+[ext_resource type="Texture2D" uid="uid://dgyolngjivip1" path="res://assets/backgrounds/making_potions.png" id="1_7o80j"]
+[ext_resource type="Script" path="res://src/scripts/scroll_container.gd" id="3_8ok48"]
+[ext_resource type="Texture2D" uid="uid://c71b22njvq7lg" path="res://assets/ingredients/anemone.png" id="3_52hap"]
+[ext_resource type="Texture2D" uid="uid://cpod053vhm8x8" path="res://assets/ingredients/eucalyptus.png" id="4_fkubq"]
+[ext_resource type="Texture2D" uid="uid://qudyjyafsip2" path="res://assets/ingredients/baby's breath.png" id="4_g36yb"]
+[ext_resource type="Script" path="res://src/scripts/eucalyptus.gd" id="4_tp4nn"]
+[ext_resource type="Texture2D" uid="uid://ba3gfowhdid77" path="res://assets/ingredients/blood.png" id="5_wgvnw"]
+[ext_resource type="Texture2D" uid="uid://bxj4vq8l05mjf" path="res://assets/ingredients/cerfeuil sauvage.png" id="6_7oc6o"]
+[ext_resource type="Script" path="res://src/scripts/chamomile.gd" id="6_dw8lc"]
+[ext_resource type="Texture2D" uid="uid://bjr1ct8yia3nn" path="res://assets/ingredients/chamomile.png" id="7_ikjc3"]
+[ext_resource type="Texture2D" uid="uid://c4c07lniu67ve" path="res://assets/ingredients/butterfly.png" id="8_a0ie8"]
+[ext_resource type="Script" path="res://src/scripts/cerfeuil sauvage.gd" id="8_u32rc"]
+[ext_resource type="Texture2D" uid="uid://wfc74qllafkr" path="res://assets/ingredients/iris.png" id="10_5s01b"]
+[ext_resource type="Script" path="res://src/scripts/butterfly.gd" id="10_q61ve"]
+[ext_resource type="Texture2D" uid="uid://pwknjb00u33x" path="res://assets/ingredients/moonlight.png" id="11_vfnk3"]
+[ext_resource type="Texture2D" uid="uid://royuv5wd8n2y" path="res://assets/ingredients/mushroom.png" id="12_0wtkk"]
+[ext_resource type="Script" path="res://src/scripts/thyme.gd" id="12_ewlty"]
+[ext_resource type="Texture2D" uid="uid://gtcettseejb8" path="res://assets/ingredients/orchid.png" id="13_13pr1"]
+[ext_resource type="Texture2D" uid="uid://cbyudvygi6fq4" path="res://assets/ingredients/rose.png" id="14_aiim2"]
+[ext_resource type="Script" path="res://src/scripts/baby's breath.gd" id="14_mx28a"]
+[ext_resource type="Script" path="res://src/scripts/iris.gd" id="16_4bl28"]
+[ext_resource type="Texture2D" uid="uid://dflngeh8h8ax3" path="res://assets/ingredients/egg.png" id="16_mwsnw"]
+[ext_resource type="Texture2D" uid="uid://cyxttkehm5kkt" path="res://assets/ingredients/thyme.png" id="17_6c310"]
+[ext_resource type="Texture2D" uid="uid://dnokuvlloiwj2" path="res://assets/ingredients/strawberry.png" id="18_0htmq"]
+[ext_resource type="Script" path="res://src/scripts/moonlight.gd" id="18_chxbb"]
+[ext_resource type="Texture2D" uid="uid://b2rgt6arypt4k" path="res://assets/ingredients/rosemary.png" id="19_ejvx8"]
+[ext_resource type="Script" path="res://src/scripts/candy.gd" id="20_6ibdx"]
+[ext_resource type="Texture2D" uid="uid://dnrow1d8yvwib" path="res://assets/ingredients/candy.png" id="20_ksum4"]
+[ext_resource type="Texture2D" uid="uid://wkc8t4ugy1tq" path="res://assets/ingredients/hypericum.png" id="20_y0eyo"]
+[ext_resource type="Script" path="res://src/scripts/orchid.gd" id="22_n15pw"]
+[ext_resource type="Script" path="res://src/scripts/rose.gd" id="24_7xetf"]
+[ext_resource type="Script" path="res://src/scripts/anemone.gd" id="26_yvc4j"]
+[ext_resource type="Script" path="res://src/scripts/egg.gd" id="28_ecyh1"]
+[ext_resource type="Script" path="res://src/scripts/blood.gd" id="30_snmcf"]
+[ext_resource type="Script" path="res://src/scripts/strawberry.gd" id="32_s2kpq"]
+[ext_resource type="Script" path="res://src/scripts/rosemary.gd" id="34_retaj"]
+[ext_resource type="Script" path="res://src/scripts/hypericum.gd" id="36_yjr80"]
+[ext_resource type="Script" path="res://src/scripts/mushroom.gd" id="38_6d1v3"]
+
+[node name="MakingPotions" type="Sprite2D"]
+process_mode = 3
+position = Vector2(575, 325)
+scale = Vector2(0.598958, 0.6)
+texture = ExtResource("1_7o80j")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_direction = 1
+offset_left = 291.0
+offset_top = -433.0
+offset_right = 785.0
+offset_bottom = 275.0
+focus_mode = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+script = ExtResource("3_8ok48")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 700)
+layout_mode = 2
+focus_next = NodePath("../VBoxContainer3")
+focus_mode = 1
+
+[node name="Control" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control"]
+show_behind_parent = true
+layout_mode = 1
+offset_left = 26.2176
+offset_top = 6.33336
+offset_right = 178.218
+offset_bottom = 153.333
+mouse_filter = 1
+toggle_mode = true
+button_pressed = true
+keep_pressed_outside = true
+texture_normal = ExtResource("4_fkubq")
+texture_pressed = ExtResource("4_fkubq")
+texture_hover = ExtResource("4_fkubq")
+script = ExtResource("4_tp4nn")
+
+[node name="Control3" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control3"]
+layout_mode = 0
+offset_left = 298.357
+offset_top = 470.667
+offset_right = 472.357
+offset_bottom = 641.667
+texture_normal = ExtResource("7_ikjc3")
+script = ExtResource("6_dw8lc")
+
+[node name="Control4" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control4"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 27.8872
+offset_top = 468.333
+offset_right = 189.887
+offset_bottom = 639.333
+texture_normal = ExtResource("6_7oc6o")
+script = ExtResource("8_u32rc")
+
+[node name="Control5" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control5"]
+layout_mode = 0
+offset_left = 297.678
+offset_top = 229.333
+offset_right = 459.678
+offset_bottom = 400.333
+texture_normal = ExtResource("8_a0ie8")
+script = ExtResource("10_q61ve")
+
+[node name="Control6" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control6"]
+layout_mode = 0
+offset_left = 30.5478
+offset_top = 225.333
+offset_right = 192.548
+offset_bottom = 396.333
+texture_normal = ExtResource("17_6c310")
+texture_pressed = ExtResource("17_6c310")
+script = ExtResource("12_ewlty")
+
+[node name="Control2" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer/Control2"]
+layout_mode = 0
+offset_left = 301.696
+offset_top = -13.6666
+offset_right = 463.696
+offset_bottom = 133.333
+texture_normal = ExtResource("4_g36yb")
+script = ExtResource("14_mx28a")
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 700)
+layout_mode = 2
+focus_next = NodePath("../VBoxContainer4")
+focus_previous = NodePath("../VBoxContainer")
+focus_mode = 1
+
+[node name="Control" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 6.0
+offset_right = 191.0
+offset_bottom = 153.0
+focus_neighbor_left = NodePath("../../../VBoxContainer")
+focus_previous = NodePath("../../../VBoxContainer")
+focus_mode = 1
+texture_normal = ExtResource("10_5s01b")
+script = ExtResource("16_4bl28")
+
+[node name="Control3" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control3"]
+layout_mode = 0
+offset_left = 301.017
+offset_top = 470.667
+offset_right = 463.017
+offset_bottom = 641.667
+texture_normal = ExtResource("11_vfnk3")
+script = ExtResource("18_chxbb")
+
+[node name="Control4" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control4"]
+layout_mode = 0
+offset_left = 27.2087
+offset_top = 468.333
+offset_right = 189.209
+offset_bottom = 639.333
+texture_normal = ExtResource("20_ksum4")
+script = ExtResource("20_6ibdx")
+
+[node name="Control5" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control5"]
+layout_mode = 0
+offset_left = 307.904
+offset_top = 241.0
+offset_right = 469.904
+offset_bottom = 412.0
+texture_normal = ExtResource("13_13pr1")
+script = ExtResource("22_n15pw")
+
+[node name="Control6" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control6"]
+layout_mode = 0
+offset_left = 30.5478
+offset_top = 225.333
+offset_right = 192.548
+offset_bottom = 396.333
+texture_normal = ExtResource("14_aiim2")
+script = ExtResource("24_7xetf")
+
+[node name="Control2" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control2"]
+layout_mode = 0
+offset_left = 302.896
+offset_top = -20.3336
+offset_right = 464.896
+offset_bottom = 150.666
+texture_normal = ExtResource("3_52hap")
+script = ExtResource("26_yvc4j")
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 700)
+layout_mode = 2
+focus_neighbor_left = NodePath("../VBoxContainer3")
+focus_previous = NodePath("../VBoxContainer3")
+focus_mode = 1
+
+[node name="Control" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 6.0
+offset_right = 191.0
+offset_bottom = 153.0
+focus_neighbor_left = NodePath("../../../VBoxContainer")
+focus_previous = NodePath("../../../VBoxContainer")
+focus_mode = 1
+texture_normal = ExtResource("16_mwsnw")
+script = ExtResource("28_ecyh1")
+
+[node name="Control3" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control3"]
+layout_mode = 0
+offset_left = 301.017
+offset_top = 470.667
+offset_right = 463.017
+offset_bottom = 641.667
+texture_normal = ExtResource("5_wgvnw")
+script = ExtResource("30_snmcf")
+
+[node name="Control4" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control4"]
+layout_mode = 0
+offset_left = 27.2087
+offset_top = 468.333
+offset_right = 189.209
+offset_bottom = 639.333
+texture_normal = ExtResource("18_0htmq")
+script = ExtResource("32_s2kpq")
+
+[node name="Control5" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control5"]
+layout_mode = 0
+offset_left = 304.774
+offset_top = 224.333
+offset_right = 467.774
+offset_bottom = 395.333
+texture_normal = ExtResource("19_ejvx8")
+script = ExtResource("34_retaj")
+
+[node name="Control6" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control6"]
+layout_mode = 0
+offset_left = 30.5478
+offset_top = 225.333
+offset_right = 192.548
+offset_bottom = 396.333
+texture_normal = ExtResource("20_y0eyo")
+script = ExtResource("36_yjr80")
+
+[node name="Control2" type="Control" parent="ScrollContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control2"]
+layout_mode = 0
+offset_left = 299.765
+offset_top = -13.6669
+offset_right = 461.765
+offset_bottom = 157.333
+texture_normal = ExtResource("12_0wtkk")
+script = ExtResource("38_6d1v3")

@@ -20,10 +20,23 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
+<<<<<<< Updated upstream
 directories/dch_directory={}
 directories/dtl_directory={
 "timeline": "res://timeline.dtl"
+=======
+directories/dch_directory={
+"Corpus Cristi": "res://dialogic/characters/Corpus Cristi.dch",
+"Gretel": "res://dialogic/characters/Gretel.dch",
+"Hasel": "res://dialogic/characters/Hasel.dch"
 }
+directories/dtl_directory={
+"level_1": "res://dialogic/timelines/level_1.dtl",
+"level_2": "res://dialogic/timelines/level_2.dtl"
+>>>>>>> Stashed changes
+}
+layout/style_list=["res://dialogic/styles/style.tres"]
+layout/default_style="res://dialogic/styles/style.tres"
 
 [editor_plugins]
 
