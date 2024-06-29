@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3 uid="uid://b41ukt7irn4t5"]
+
+[ext_resource type="PackedScene" uid="uid://disxjqgtnguos" path="res://src/scenes/MakingPotion.tscn" id="1_gui0g"]
+[ext_resource type="Script" path="res://src/scripts/first_potion.gd" id="2_dx7ph"]
+
+[node name="MakingPotions" instance=ExtResource("1_gui0g")]
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control" index="0"]
+offset_top = 11.3334
+offset_right = 195.105
+offset_bottom = 165.333
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control3" index="0"]
+offset_left = 305.244
+offset_top = 479.0
+offset_right = 467.244
+offset_bottom = 650.0
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control4" index="0"]
+offset_top = 481.667
+offset_bottom = 652.667
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control5" index="0"]
+offset_left = 285.209
+offset_top = 227.667
+offset_right = 461.209
+offset_bottom = 398.667
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control6" index="0"]
+offset_left = 38.1135
+offset_top = 238.667
+offset_right = 200.114
+offset_bottom = 388.667
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer3/Control2" index="0"]
+offset_left = 293.557
+offset_top = -25.3333
+offset_right = 438.557
+offset_bottom = 145.666
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control" index="0"]
+offset_left = 1.59217
+offset_top = 4.6667
+offset_right = 165.592
+offset_bottom = 163.667
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control3" index="0"]
+offset_left = 280.41
+offset_top = 479.0
+offset_right = 442.41
+offset_bottom = 650.0
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control4" index="0"]
+offset_left = 18.2878
+offset_top = 476.667
+offset_right = 180.288
+offset_bottom = 647.667
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control5" index="0"]
+offset_left = 267.053
+offset_top = 229.333
+offset_right = 430.053
+offset_bottom = 400.333
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control6" index="0"]
+offset_left = -6.75575
+offset_top = 227.0
+offset_right = 161.244
+offset_bottom = 398.0
+
+[node name="TextureButton" parent="ScrollContainer/HBoxContainer/VBoxContainer4/Control2" index="0"]
+offset_left = 275.401
+offset_top = -13.6666
+offset_right = 438.401
+
+[node name="Control" type="Control" parent="." index="1"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Control" index="0"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = -868.174
+offset_top = -80.0
+offset_right = -360.174
+offset_bottom = 377.0
+script = ExtResource("2_dx7ph")
+
+[node name="Label" type="Label" parent="." index="3"]
+offset_left = 294.0
+offset_top = 283.0
+offset_right = 761.0
+offset_bottom = 475.0
+text = "адекватность, любовь к детям и окружающему миру"

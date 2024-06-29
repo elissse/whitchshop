@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo7a6qexbpsy5"]
+
+[ext_resource type="VideoStream" path="res://assets/backgrounds/corpus-cristi.ogv" id="1_5w0r3"]
+[ext_resource type="Script" path="res://src/scripts/corpus_cristi_screen.gd" id="1_vitgi"]
+
+[node name="CorpusCristi" type="Node"]
+script = ExtResource("1_vitgi")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("1_5w0r3")
+autoplay = true

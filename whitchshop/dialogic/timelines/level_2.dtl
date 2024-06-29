@@ -1,0 +1,41 @@
+[style name="The_Actual_Style"]
+[background arg="res://assets/backgrounds/shopp.png" fade="0.0"]
+join Theodore 1
+Theodore: *вполголоса* Добрый день… Никого нет? Ну, я тогда пойду!
+leave Theodore
+join "corpus cristi" 1
+"corpus cristi": Молодой человек, я вас прекрасно слышу.
+leave "corpus cristi"
+join Theodore 1
+Theodore: Действительно? Неловко получилось, я все равно наверное пойду…
+leave Theodore
+join "corpus cristi" 1
+"corpus cristi": Однако что-то привело вас к моим дверям.
+leave "corpus cristi"
+join Theodore 1
+Theodore: … Хорошо, с этим и вправду необходимо покончить.
+leave Theodore
+join Theodore 1
+Theodore: Некоторое время назад, а именно уже 5 месяцев, спокойствие покинуло мысли мои. Каждую ночь не могу сомкнуть глаз.
+leave Theodore
+join "corpus cristi" 1
+"corpus cristi": Должно быть вас что-то мучает. Проблемы с самореализацией, трудоголизм, неразделенная любовь?
+leave "corpus cristi"
+join Theodore 1
+Theodore: Дело не совсем в этом… Как только мои прекрасные рыжие локоны касаются подушки, мысли затуманиваются лишь одной идеей\: захватить мир, стать его единственным, наисветлейшим правителем. 
+Theodore: Я действительно убежден, что никто, кроме меня, не способен с достоинством вынести эту ношу.
+leave Theodore
+join "corpus cristi" 1
+"corpus cristi": Значит вам необходима помощь в захвате мира, я правильно понимаю?
+leave "corpus cristi"
+join Theodore 1
+Theodore: Нет, нет, нет, ни в коем случае. Совесть не позволяет. Да и не может правитель быть настолько хорош. На кого тогда народу злиться? 
+Theodore: Помогите мне со сном, дорогая. Что может быть хуже метаний мыслей в ночи без возможности успокоить их болезненный бег?
+leave Theodore
+join "corpus cristi" 1
+"corpus cristi": Оу, раз так, то дело разрешится быстро. Здесь нечего стесняться. Присаживайтесь. Вам с ароматом клубники или эвкалипта?
+leave "corpus cristi"
+join Theodore 1
+Theodore: Клубники, пожалуйста.
+leave Theodore
+[end_timeline]

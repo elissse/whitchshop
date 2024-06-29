@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr0hv8tl2ko5a"]
+
+[ext_resource type="Script" path="res://src/scripts/level_1.gd" id="1_qklum"]
+[ext_resource type="Texture2D" uid="uid://mo3scsad7uxf" path="res://assets/backgrounds/make_potions_screen.png" id="2_pbn1k"]
+[ext_resource type="Texture2D" uid="uid://b4qqifxfe1jn2" path="res://assets/backgrounds/potion_button.png" id="3_wmv3b"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qklum")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 325)
+scale = Vector2(0.597808, 0.6)
+texture = ExtResource("2_pbn1k")
+
+[node name="Button" type="Button" parent="Sprite2D" node_paths=PackedStringArray("shortcut_context")]
+light_mask = 14
+visibility_layer = 6
+layout_direction = 1
+offset_left = -528.598
+offset_top = -191.667
+offset_right = 486.402
+offset_bottom = 199.333
+shortcut_context = NodePath(".")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_pressed_color = Color(0.862745, 0.792157, 0.811765, 0.643137)
+theme_override_colors/font_hover_color = Color(0.921569, 0.921569, 0.921569, 0.537255)
+theme_override_colors/icon_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+icon = ExtResource("3_wmv3b")
+
+[connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]

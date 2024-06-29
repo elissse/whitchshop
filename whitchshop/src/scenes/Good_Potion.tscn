@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwvjm78f1jk6o"]
+
+[ext_resource type="Script" path="res://src/scripts/good_potion.gd" id="1_8awpr"]
+[ext_resource type="Texture2D" uid="uid://4dgvieitpt6b" path="res://assets/backgrounds/21.png" id="1_hjpad"]
+[ext_resource type="Texture2D" uid="uid://bow2mxisaacol" path="res://assets/backgrounds/level_button.png" id="2_w43ei"]
+
+[node name="GoodPotion" type="Node2D"]
+script = ExtResource("1_8awpr")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(577, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_hjpad")
+
+[node name="Button" type="Button" parent="Control/Sprite2D"]
+offset_left = 593.0
+offset_top = 350.0
+offset_right = 940.0
+offset_bottom = 532.0
+theme_override_colors/icon_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+icon = ExtResource("2_w43ei")
+flat = true
+
+[connection signal="pressed" from="Control/Sprite2D/Button" to="." method="_on_button_pressed"]

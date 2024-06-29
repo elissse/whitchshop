@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://08sfqklowb20"]
+
+[ext_resource type="Script" path="res://src/scripts/level_2.gd" id="1_g87xf"]
+[ext_resource type="Texture2D" uid="uid://mo3scsad7uxf" path="res://assets/backgrounds/make_potions_screen.png" id="2_udha8"]
+[ext_resource type="Texture2D" uid="uid://b4qqifxfe1jn2" path="res://assets/backgrounds/potion_button.png" id="3_urr40"]
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_g87xf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(580, 327)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_udha8")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+light_mask = 7
+visibility_layer = 7
+offset_left = -528.333
+offset_top = -190.0
+offset_right = 486.667
+offset_bottom = 201.0
+theme_override_colors/icon_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+icon = ExtResource("3_urr40")
+flat = true
+
+[connection signal="button_down" from="Sprite2D/Button" to="." method="_on_button_button_down"]
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

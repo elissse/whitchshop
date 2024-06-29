@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv71dgvisdyt1"]
+
+[ext_resource type="Script" path="res://src/scripts/menu.gd" id="1_kmi31"]
+[ext_resource type="Texture2D" uid="uid://4g21l3rcp8fb" path="res://assets/backgrounds/play.png" id="3_5h507"]
+[ext_resource type="Texture2D" uid="uid://b36nfn8pt78dr" path="res://assets/backgrounds/menu.png" id="3_qfepc"]
+[ext_resource type="VideoStream" path="res://assets/backgrounds/corpus-cristi.ogv" id="4_26o03"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kmi31")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1088.0
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("4_26o03")
+autoplay = true
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Menu" type="Sprite2D" parent="Control2"]
+position = Vector2(577.5, 323.5)
+scale = Vector2(0.600521, 0.599074)
+texture = ExtResource("3_qfepc")
+
+[node name="Button" type="Button" parent="Control2"]
+light_mask = 3
+visibility_layer = 11
+layout_mode = 0
+offset_left = 267.0
+offset_top = 224.0
+offset_right = 886.0
+offset_bottom = 427.0
+theme_override_colors/icon_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+theme_override_colors/icon_hover_pressed_color = Color(0.929412, 0.905882, 0.996078, 0.827451)
+icon = ExtResource("3_5h507")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Control2/Button" to="." method="_on_button_pressed"]

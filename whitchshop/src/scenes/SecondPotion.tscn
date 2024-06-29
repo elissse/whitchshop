@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://u7tru54eyknk"]
+
+[ext_resource type="PackedScene" uid="uid://disxjqgtnguos" path="res://src/scenes/MakingPotion.tscn" id="1_ctjjo"]
+[ext_resource type="Script" path="res://src/scripts/second_potion.gd" id="2_w8sdd"]
+
+[node name="MakingPotions" instance=ExtResource("1_ctjjo")]
+
+[node name="Control" type="Control" parent="." index="1"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Control" index="0"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -20.375
+anchor_right = -10.4
+anchor_bottom = 4.675
+offset_left = -23.0
+offset_top = -73.0
+offset_right = 17.0
+offset_bottom = 170.0
+script = ExtResource("2_w8sdd")
